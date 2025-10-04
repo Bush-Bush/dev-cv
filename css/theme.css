@@ -249,7 +249,7 @@ ul, li {
 
 /*** MENU ***/
 .navbar {
-	--bs-navbar-toggler-icon-bg: url(../img/ico/burger.svg);
+	--bs-navbar-toggler-icon-bg: url(../img/ico/burger.svg)!important;
 }
 
 #navbarSupportedContent1 {
@@ -356,7 +356,7 @@ ul, li {
 }
 
 .navbar-toggler-icon {
-	background-image: url(../img/ico/burger.svg);
+	background-image: url(../img/ico/burger.svg)!important;
 }
 
 /*#navbar-single {
