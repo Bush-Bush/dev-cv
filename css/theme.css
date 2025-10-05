@@ -3,9 +3,9 @@
 /* ALL */
 :root {
 	--corporate-color-1: #fff;
-	/*--corporate-color-hover-1: #4692B6;
-	--corporate-color-active-1: #3F85A5;
-	--corporate-color-2: #BB2D3C; */
+	--corporate-color-hover-1: #fff;
+	--corporate-color-active-1: #BB2D3C;
+	--corporate-color-2: #BB2D3C; 
 	--default-color: #E3B873;
 }
 
@@ -34,7 +34,6 @@ html {
 /* END ALL */
 
 h1, .h1 {
-	color: #fff;
 	font-weight: 600;
     font-size: 34px;
     color: var(--default-color);
@@ -259,14 +258,13 @@ ul, li {
 }
 
 #top-menu-tel {
-	/*font-family: HelveticaNeueCyr-Medium;*/
-	font-size: 18px;
-	color: #4b4b4b;
+	font-size: 18px;	
 	text-align: end;
+	color: var(--corporate-color-1)
 }
 
 #top-menu-tel span {
-	color: var(--corporate-color-1);
+	color: var(--default-color);
 }
 
 #main-menu .nav-item,
@@ -280,6 +278,10 @@ ul, li {
 #navbarSupportedContent2 .nav-link {
 	color: var(--corporate-color-1);
 	letter-spacing: 1px;
+}
+
+#main-menu .nav-link span {
+	color: var(--default-color);
 }
 
 #navbarSupportedContent3 .nav-link {
@@ -343,9 +345,9 @@ ul, li {
 	color: var(--default-color);
 }
 
-/*.navbar-logo:hover {
-	color: #4B4B4B;
-}	*/
+.navbar-logo:hover {
+	color: var(--default-color);
+}	
 
 .navbar-logo__white {
 	color: #EBEBEB;
@@ -767,10 +769,10 @@ ul.product-categories {
 
 .checked {
 	opacity: 0;
-	transition: 2s;
-	animation: show 3s 1;
+	transition: 6s;
+	animation: show 7s 1;
 	animation-fill-mode: forwards;
-	animation-delay: 2s;
+	animation-delay: 6s;
 }
 
 @keyframes show {
@@ -1302,6 +1304,10 @@ input[type='range']::-webkit-slider-thumb:active {
 	line-height: 14px;
 } 
 
+.header-phone:hover {
+	color: var(--default-color);
+}
+
 .header-phone span {
 	color: var(--corporate-color-1);
 	font-size: 22px;
@@ -1379,6 +1385,8 @@ footer {
 
 #im-in-footer {
 	font-size: 16px;
+	/*color: var(--corporate-color-1);*/
+	font-weight: 500;
 }
 
 .footer-link {
